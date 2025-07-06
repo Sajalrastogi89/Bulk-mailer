@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Email Template</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        /* Reset and base styles */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333333;
+            background-color: #f4f4f4;
+        }
+        
+        /* Prevent email clients from auto-styling text as links */
+        a, a:link, a:visited, a:hover, a:active {
+            color: inherit !important;
+            text-decoration: none !important;
+        }
+        
+        /* Force text color consistency */
+        p, div, span, td, th, h1, h2, h3, h4, h5, h6 {
+            color: #333333 !important;
+        }
+        
+        /* Prevent automatic link detection styling */
+        .no-link, .prevent-auto-link {
+            color: #333333 !important;
+            text-decoration: none !important;
+            pointer-events: none !important;
+        }
+        
+        /* Override email client default link colors */
+        body a, body a:link, body a:visited {
+            color: #333333 !important;
+            text-decoration: none !important;
+        }
+        
+        /* Specific fix for text after images */
+        img + p, img + div, img + span {
+            color: #333333 !important;
+        }
+        
+        /* Container styles */
+        .email-container {
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: #ffffff;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        
+        .header {
+            background-color: #667eea;
+            color: #ffffff;
+            padding: 30px;
+            text-align: center;
+        }
+        
+        .header h1 {
+            margin: 0;
+            font-size: 28px;
+            color: #ffffff !important;
+        }
+        
+        .content {
+            padding: 30px;
+            background-color: #ffffff;
+        }
+        
+        .content p {
+            margin-bottom: 15px;
+            color: #333333 !important;
+        }
+        
+        .footer {
+            background-color: #333333;
+            color: #ffffff;
+            padding: 20px;
+            text-align: center;
+            font-size: 14px;
+        }
+        
+        .footer p {
+            margin: 0;
+            color: #ffffff !important;
+        }
+        
+        /* Button styles */
+        .button {
+            display: inline-block;
+            padding: 15px 30px;
+            background-color: #667eea;
+            color: #ffffff !important;
+            text-decoration: none !important;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+        
+        .button:hover {
+            background-color: #5a67d8 !important;
+        }
+    </style>
+</head>
+<body>
+    <div class="email-container">
+        <div class="header">
+            <h1>🎉 Welcome Email</h1>
+        </div>
+        
+        <div class="content">
+            <p style="color: #333333 !important;">Hello there,</p>
+            
+            <p style="color: #333333 !important;">
+                Welcome to our platform! We're excited to have you join our community.
+            </p>
+            
+            <p style="color: #333333 !important;">
+                This email demonstrates proper formatting to prevent text from appearing as links in email clients.
+            </p>
+            
+            <div style="text-align: center; margin: 30px 0;">
+                <a href="#" class="button" style="color: #ffffff !important; text-decoration: none !important;">
+                    Get Started
+                </a>
+            </div>
+            
+            <p style="color: #333333 !important;">
+                If you have any questions, feel free to reach out to our support team.
+            </p>
+            
+            <p style="color: #333333 !important;">
+                Best regards,<br>
+                <span style="color: #333333 !important;">The Team</span>
+            </p>
+        </div>
+        
+        <div class="footer">
+            <p style="color: #ffffff !important;">
+                &copy; 2025 Your Company Name. All rights reserved.
+            </p>
+            <p style="color: #ffffff !important;">
+                123 Business Street, City, State 12345
+            </p>
+        </div>
+    </div>
+</body>
+</html>
